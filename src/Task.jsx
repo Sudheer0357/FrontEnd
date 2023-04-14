@@ -10,7 +10,10 @@ const Task = ({ id, taskName, completed }) => {
       <div className='tasklist'>
         <div className='title'>
           {completed && <BsCheckCircle />}
-          <p className={`${completed ? 'title completed' : 'title'}`}>
+          <p
+            className={`${completed ? 'title completed' : 'title'}`}
+            style={{ color: `${completed ? 'green' : null}` }}
+          >
             {taskName}
           </p>
         </div>
@@ -48,7 +51,6 @@ const Wrapper = styled.li`
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    color: green;
   }
   .tasklist {
     display: flex;
