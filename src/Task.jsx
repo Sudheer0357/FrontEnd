@@ -8,12 +8,12 @@ const Task = ({ id, taskName, completed }) => {
   return (
     <Wrapper>
       <div className='tasklist'>
-        <div className='title'>
+        <div
+          className='title'
+          style={{ color: `${completed ? 'green' : null}` }}
+        >
           {completed && <BsCheckCircle />}
-          <p
-            className={`${completed ? 'title completed' : 'title'}`}
-            style={{ color: `${completed ? 'green' : null}` }}
-          >
+          <p className={`${completed ? 'title completed' : 'title'}`}>
             {taskName}
           </p>
         </div>
