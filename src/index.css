@@ -39,7 +39,7 @@ main {
   align-items: center;
 }
 #task {
-  height: 48px;
+  height: 2rem;
   width: 90%;
   padding: 0.5rem 0.1rem 0.5rem 1rem;
   border-radius: 0.25rem 0 0 0.25rem;
@@ -54,12 +54,12 @@ ul {
   list-style: none;
 }
 .btn {
-  padding: 0.82rem 1.5rem;
+  padding: 0.45rem 1.5rem;
   background: #4545f1;
   color: white;
-  font-size: large;
+  font-size: 1rem;
   font-weight: bold;
-  border: 1px solid #4545f1;
+  border: none;
   border-radius: 0rem 0.25rem 0.25rem 0;
   transition: all 80ms ease;
 }
@@ -107,4 +107,7 @@ ul {
 .alert-reject {
   background: rgb(255, 36, 36);
   color: #fff;
+}
+
+@media screen and (max-width: 500px) {
 }

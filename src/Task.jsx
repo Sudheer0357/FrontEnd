@@ -10,7 +10,7 @@ const Task = ({ id, taskName, completed }) => {
       <div className='tasklist'>
         <div
           className='title'
-          style={{ color: `${completed ? 'green' : null}` }}
+          style={{ color: `${completed ? 'green' : 'black'}` }}
         >
           {completed && <BsCheckCircle />}
           <p className={`${completed ? 'title completed' : 'title'}`}>
